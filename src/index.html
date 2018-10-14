@@ -36,10 +36,10 @@
             //alert(filename);
             $.ajax({
                 type: 'POST',
-                url: "~/nutrition-is-my-mission\src\readtext.py",	//THIS MIGHT CHANGE?
+                url: "./pytest.py",	//THIS MIGHT CHANGE?
                 data: { param: filename },
-                success: function (response) { console.log(response) },
-                error: function (response) { console.error(response) }
+                success: function(response) { console.log(response); alert("Success"); },
+                error: function(response) { console.error(response); alert("Error"); }
             });
         }
 
